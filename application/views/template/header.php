@@ -224,7 +224,7 @@
           </li>
            
           <li class="nav-item">
-            <a href="<?=base_url("/")?>" class="nav-link">
+            <a href="<?=base_url("/laporan")?>" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Laporan
@@ -233,7 +233,7 @@
           </li>
          
           <li class="nav-item">
-            <a href="<?=base_url("/")?>" class="nav-link">
+            <a href="<?=base_url("/pengumpulan")?>" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Pengumpulan

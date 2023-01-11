@@ -8,6 +8,14 @@ if ( ! function_exists('rupiah'))
     }   
 }
 
+if ( ! function_exists('tanggal'))
+{
+    function tanggal($var = '')
+    {
+    return date("Y/m/d",strtotime($var));
+    }   
+}
+
 
 if ( ! function_exists('countday'))
 {
