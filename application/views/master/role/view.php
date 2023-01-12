@@ -10,6 +10,7 @@
                   <tr>
                     <th>UserCode</th>
                     <th>Username</th>
+                    <th>status</th>
                     <th>Create</th>
                     <th width=50px>ACTION</th>
                   </tr>
@@ -20,8 +21,9 @@
                 //    print_r($value);
                     ?>
                     <tr>
-                        <td><?php print_r($value["userCode"]); ?></td>
-                        <td><?php print_r($value["email"]); ?></td>
+                        <td><?php print_r($value["roleCode"]); ?></td>
+                        <td><?php print_r($value["role"]); ?></td>
+                        <td><?php print_r($value["status"]); ?></td>
                         <td><?php print_r(tanggal($value["createAt"])); ?></td>
                         <td>
                         <div class="btn-group">
@@ -30,8 +32,8 @@
                               <span class="sr-only">Toggle Dropdown</span>
                             </button>
                             <div class="dropdown-menu" role="menu">
-                              <a class="dropdown-item" href="<?=base_url("Master/user/edit/".$value["userCode"]);?>">EDIT</a>
-                              <a class="dropdown-item" onclick="hapus('<?=base_url("Master/user/delete/".$value['userCode']);?>')">DELETE</a>
+                              <a class="dropdown-item" href="<?=base_url("master/role/edit/".$value["roleCode"]);?>">EDIT</a>
+                              <a class="dropdown-item" onclick="hapus('<?=base_url("master/role/delete/".$value['roleCode']);?>')">DELETE</a>
                             </div>
                           </div>
                         </td>

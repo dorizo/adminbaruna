@@ -24,11 +24,11 @@ class User extends CI_Controller {
 	}
 	public function edit($id){
 
-		$this->form_validation->set_rules('username', 'username', 'required');
+		$this->form_validation->set_rules('email', 'email', 'required');
         
-        $data["dataresult"] = $this->user_model->viewSinggle($id);
+        $data["dataresult"] = $this->user_model->single($id);
         // $data["datajob"] = $this->job_model->view();
-		$data["titlepage"] = "Vendor : " . $data["dataresult"]->vendorName;
+		$data["titlepage"] = "Vendor : ";
 	   if ($this->form_validation->run() === FALSE)
         {
      	$this->load->view('template/header' , $data);
