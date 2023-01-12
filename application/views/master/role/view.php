@@ -3,7 +3,7 @@
               
               <div class="card-body table-responsive p-0">
                   <div class="alert clearfix text-right">
-                    <a href="<?=base_url("Master/user/add");?>" class="btn btn-success"><i class="fa fa-plus"></i>TAMBAH</a>
+                    <a href="<?=base_url("Master/role/add");?>" class="btn btn-success"><i class="fa fa-plus"></i>TAMBAH</a>
                   </div>
                 <table id="example" class="table table-striped table-valign-middle" style="font-size:12px">
                   <thead>

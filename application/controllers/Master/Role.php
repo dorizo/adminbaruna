@@ -24,11 +24,11 @@ class Role extends CI_Controller {
 	}
 	public function edit($id){
 
-		$this->form_validation->set_rules('username', 'username', 'required');
+		$this->form_validation->set_rules('role', 'role', 'required');
         
         $data["dataresult"] = $this->role_model->viewSinggle($id);
         // $data["datajob"] = $this->job_model->view();
-		$data["titlepage"] = "Vendor : " . $data["dataresult"]->vendorName;
+		$data["titlepage"] = "Vendor : ";
 	   if ($this->form_validation->run() === FALSE)
         {
      	$this->load->view('template/header' , $data);
@@ -37,14 +37,14 @@ class Role extends CI_Controller {
 		
 		}else{
 			$this->role_model->submitedit();	
-            redirect('/master/user', 'refresh');
+            redirect('/Master/role', 'refresh');
 		
 		}
 	}
 
     public function add(){
 
-		$this->form_validation->set_rules('email', 'email', 'required');
+		$this->form_validation->set_rules('role', 'role', 'required');
       $data["titlepage"] = "PROYEK ";
 	   if ($this->form_validation->run() === FALSE)
         {
@@ -54,11 +54,11 @@ class Role extends CI_Controller {
 		
 		}else{
 			$this->role_model->submitadd();	
-            redirect('/master/user', 'refresh');
+            redirect('/Master/role', 'refresh');
 		}
 	}
     public function delete($d){
         $this->role_model->delete($d);
-        redirect('/master/user', 'refresh');    
+        redirect('/Master/role', 'refresh');    
     }
 }
