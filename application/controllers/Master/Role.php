@@ -37,7 +37,7 @@ class User extends CI_Controller {
 		
 		}else{
 			$this->user_model->submitedit();	
-            redirect('/Master/user', 'refresh');
+            redirect('/master/user', 'refresh');
 		
 		}
 	}
@@ -54,11 +54,11 @@ class User extends CI_Controller {
 		
 		}else{
 			$this->user_model->submitadd();	
-            redirect('/Master/user', 'refresh');
+            redirect('/master/user', 'refresh');
 		}
 	}
     public function delete($d){
         $this->user_model->delete($d);
-        redirect('/Master/user', 'refresh');    
+        redirect('/master/user', 'refresh');    
     }
 }
