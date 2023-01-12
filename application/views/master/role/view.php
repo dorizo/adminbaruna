@@ -32,8 +32,8 @@
                               <span class="sr-only">Toggle Dropdown</span>
                             </button>
                             <div class="dropdown-menu" role="menu">
-                              <a class="dropdown-item" href="<?=base_url("master/role/edit/".$value["roleCode"]);?>">EDIT</a>
-                              <a class="dropdown-item" onclick="hapus('<?=base_url("master/role/delete/".$value['roleCode']);?>')">DELETE</a>
+                              <a class="dropdown-item" href="<?=base_url("Master/role/edit/".$value["roleCode"]);?>">EDIT</a>
+                              <a class="dropdown-item" onclick="hapus('<?=base_url("Master/role/delete/".$value['roleCode']);?>')">DELETE</a>
                             </div>
                           </div>
                         </td>

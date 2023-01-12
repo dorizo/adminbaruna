@@ -29,8 +29,8 @@ class Role_model extends CI_Model {
                 $this->db->update("role" , $param);
         }
         public function delete($id){
-                $this->db->where("userCode" , $id);
-                $this->db->delete("role");
+                $this->db->where("roleCode" , $id);
+                $this->db->update("role" , array("deleteAt" => date("Y-m-d")));
         }
 
 }
