@@ -256,7 +256,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?=base_url("/master/user")?>" class="nav-link">
+                <a href="<?=base_url("/Master/user")?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>USER</p>
                 </a>
