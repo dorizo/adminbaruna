@@ -22,7 +22,7 @@
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
-      <p class="login-box-msg">ANDALAN PRATAMA INDONUSA</p>
+      <p class="login-box-msg">BARUNA</p>
 
       <?php echo validation_errors(); ?>
       <form method="post">
