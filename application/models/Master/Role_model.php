@@ -32,5 +32,16 @@ class Role_model extends CI_Model {
                 $this->db->where("roleCode" , $id);
                 $this->db->update("role" , array("deleteAt" => date("Y-m-d")));
         }
+        public function detail($id){
+            $this->db->select('*');
+            $this->db->from('role as a');
+            $this->db->join('role_permission as b', 'a.roleCode = b.roleCode');
+            $this->db->join('permission as c', 'b.permissionCode= c.permissionCode');
+            $this->db->where('a.roleCode =', $id);
+            $this->db->where('b.deleteAt IS NULL', NULL, FALSE);
+            $this->db->order_by('c.permission','ASC');
+            return $query = $this->db->get();
+
+        }
 
 }

@@ -19,8 +19,10 @@
   <link rel="stylesheet" href="<?=base_url()?>asset/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="<?=base_url()?>asset/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
   <link rel="stylesheet" href="<?=base_url()?>asset/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
-  
+  <link rel="stylesheet" href="<?=base_url()?>asset/plugins/select2/css/select2.min.css">
+   <link rel="stylesheet" href="<?=base_url()?>asset/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
   <link rel="stylesheet" href="<?=base_url()?>asset/plugins/pace-progress/themes/black/pace-theme-flat-top.css">
+
 <!-- jQuery -->
 <script src="<?=base_url()?>asset/plugins/jquery/jquery.min.js"></script>
 </head>
@@ -268,6 +270,14 @@
                 </a>
               </li>
             </ul>
+          </li>
+          <li class="nav-item">
+            <a href="<?=base_url("/mitra")?>" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Mitra
+              </p>
+            </a>
           </li>
           <!-- <li class="nav-item">
             <a href="#" class="nav-link">
