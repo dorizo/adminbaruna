@@ -10,7 +10,7 @@
                   <!-- small box -->
                   <div class="small-box <?=$arr[$key]?> ">
                     <div class="inner">
-                      <h3><?=$value["berat"]?></h3>
+                      <h3><?=rupiah($value["berat"])?></h3>
 
                       <p><?=$value["jenis"]?></p>
                     </div>

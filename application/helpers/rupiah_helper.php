@@ -4,7 +4,7 @@ if ( ! function_exists('rupiah'))
 {
     function rupiah($var = '')
     {
-    return 'Rp ' . number_format($var);
+    return number_format($var)."Kg";
     }   
 }
 
