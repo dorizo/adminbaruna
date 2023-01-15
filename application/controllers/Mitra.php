@@ -16,7 +16,7 @@ class Mitra extends CI_Controller {
 	public function index()
 	{
 		$data["result"] = $this->mitra_model->view();
-		$data["titlepage"] = "Mitra";
+		$data["titlepage"] = "Petugas";
 		$data["pluginjs"] = "pengumpulan.js";
 		$this->load->view('template/header' , $data);
 		$this->load->view('mitra/view' , $data);

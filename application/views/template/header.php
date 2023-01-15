@@ -242,6 +242,15 @@
               </p>
             </a>
           </li>
+          
+          <li class="nav-item">
+            <a href="<?=base_url("/mitra")?>" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Petugas
+              </p>
+            </a>
+          </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -270,14 +279,6 @@
                 </a>
               </li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a href="<?=base_url("/mitra")?>" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Mitra
-              </p>
-            </a>
           </li>
           <!-- <li class="nav-item">
             <a href="#" class="nav-link">

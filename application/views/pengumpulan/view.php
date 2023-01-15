@@ -7,6 +7,7 @@
                   <tr>
                     <th>KODE</th>
                     <th>nama</th>
+                    <th>Jenis Sampah</th>
                     <th>totalBerat</th>
                     <th>createAt</th>
                   </tr>
@@ -19,6 +20,7 @@
                     <tr>
                         <td><?php print_r($value["bsCode"]); ?></td>
                         <td><?php print_r($value["nama"]); ?></td>
+                        <td><?php print_r($value["jenis"]); ?></td>
                         <td><?php print_r($value["berat"]); ?></td>
                         <td><?php print_r(tanggal($value["createAt"])); ?></td>
                     </tr>
