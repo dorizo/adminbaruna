@@ -272,12 +272,12 @@
                   <p>USER</p>
                 </a>
               </li>
-               <li class="nav-item">
+               <!-- <li class="nav-item">
                 <a href="<?=base_url("/")?>" class="nav-link ">
                   <i class="far fa-circle nav-icon"></i>
                   <p>PERMISION</p>
                 </a>
-              </li>
+              </li> -->
             </ul>
           </li>
           <!-- <li class="nav-item">
