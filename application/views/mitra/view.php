@@ -30,8 +30,8 @@
                               <span class="sr-only">Toggle Dropdown</span>
                             </button>
                             <div class="dropdown-menu" role="menu">
-                              <a class="dropdown-item" href="<?=base_url("mitra/edit/".$value["userCode"]);?>">EDIT</a>
-                              <a class="dropdown-item" onclick="hapus('<?=base_url("mitra/delete/".$value['userCode']);?>')">DELETE</a>
+                              <a class="dropdown-item" href="<?=base_url("mitra/edit/".$value["mitraCode"]);?>">EDIT D</a>
+                              <a class="dropdown-item" onclick="hapus('<?=base_url("mitra/delete/".$value['mitraCode']);?>')">DELETE</a>
                             </div>
                           </div>
                         </td>

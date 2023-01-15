@@ -84,29 +84,30 @@ class Mitra extends CI_Controller {
 			redirect('/mitra', 'refresh');
 		}
 	}
-	// public function edit($id){
+	public function edit($id){
 
-	// 	$this->form_validation->set_rules('email', 'email', 'required');
+		$this->form_validation->set_rules('userCode', 'userCode', 'required');
         
- //        $data["dataresult"] = $this->user_model->single($id);
- //        // $data["datajob"] = $this->job_model->view();
-	// 	$data["titlepage"] = "Vendor : ";
-	//    if ($this->form_validation->run() === FALSE)
- //        {
- //     	$this->load->view('template/header' , $data);
-	// 	$this->load->view('master/user/edit' , $data);
-	// 	$this->load->view('template/footer');
+        $data["dataresult"] = $this->mitra_model->single($id);
+        // $data["datajob"] = $this->job_model->view();
+		$data["titlepage"] = "Vendor : ";
+	   if ($this->form_validation->run() === FALSE)
+        {
+     	$this->load->view('template/header' , $data);
+		$this->load->view('mitra/edit' , $data);
+		$this->load->view('template/footer');
 		
-	// 	}else{
-	// 		$this->user_model->submitedit();	
- //            redirect('/Master/user', 'refresh');
+		}else{
+			$this->mitra_model->submitedit();	
+            redirect('/mitra', 'refresh');
 		
-	// 	}
-	// }
+		}
+	}
 
 
- //    public function delete($d){
- //        $this->user_model->delete($d);
- //        redirect('/Master/user', 'refresh');    
- //    }
+    public function delete($d){
+		$this->db->where("mitraCode" , $d);
+        $this->db->update("mitra" , array("deleteAt" => DATE("Y-m-d")));
+        redirect('/mitra', 'refresh');    
+    }
 }

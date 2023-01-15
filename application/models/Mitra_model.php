@@ -9,8 +9,8 @@ class Mitra_model extends CI_Model {
         public function single($role){
                 // $this->db->where("email" , $this->input->post("username"));
                 // $this->db->where("password" , md5($this->input->post("password")));
-                $this->db->where("userCode" , $role);
-                $db = $this->db->get("user");
+                $this->db->where("mitraCode" , $role);
+                $db = $this->db->get("mitra");
                  return $db->row();
             }
         public function view(){
@@ -27,16 +27,13 @@ class Mitra_model extends CI_Model {
         }
         public function submitedit(){
                 $param = $this->input->post();
-                if(strlen($this->input->post("password")) <= 30){
-                        $param["password"] = password_hash($this->input->post("password") , PASSWORD_DEFAULT);
-                };
-                $this->db->where("userCode" , $this->input->post("userCode"));
-                $this->db->update("user" , $param);
+                $this->db->where("mitraCode" , $this->input->post("mitraCode"));
+                $this->db->update("mitra" , $param);
         }
         public function delete($id){
 
-                $this->db->where("userCode" , $id);
-                $this->db->update("user");
+                $this->db->where("mitraCode" , $id);
+                $this->db->update("mitra");
         }
 
 }
