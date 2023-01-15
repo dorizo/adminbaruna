@@ -96,9 +96,9 @@ class Role extends CI_Controller {
 			}
 			if($result){
 				$insert = $this->db->insert_batch('role_permission', $result);
-				redirect('/master/role');
+				redirect($_SERVER['HTTP_REFERER']);
 			}else{
-				redirect('/master/role');
+				redirect($_SERVER['HTTP_REFERER']);
 			}
 			
 			
@@ -111,6 +111,6 @@ class Role extends CI_Controller {
 
 		);
 		$update = $this->db->update('role_permission',$update, array('rpCode' => $id));
-		redirect('/master/role');
+		redirect($_SERVER['HTTP_REFERER']);
 	}
 }
