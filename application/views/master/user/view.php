@@ -30,6 +30,7 @@
                               <span class="sr-only">Toggle Dropdown</span>
                             </button>
                             <div class="dropdown-menu" role="menu">
+                            <a class="dropdown-item" href="<?=base_url("Master/user/detail/".$value["userCode"]);?>">Detail</a>
                               <a class="dropdown-item" href="<?=base_url("Master/user/edit/".$value["userCode"]);?>">EDIT</a>
                               <a class="dropdown-item" onclick="hapus('<?=base_url("Master/user/delete/".$value['userCode']);?>')">DELETE</a>
                             </div>
