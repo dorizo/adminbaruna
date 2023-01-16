@@ -244,7 +244,7 @@
           </li>
           
           <li class="nav-item">
-            <a href="<?=base_url("/mitra")?>" class="nav-link">
+            <a href="<?=base_url("/petugas")?>" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Petugas
